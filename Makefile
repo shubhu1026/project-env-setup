@@ -1,0 +1,26 @@
+
+WHAT_TO_PRINT = "Lorem Ipsum!!!"
+LS_OUTPUT = $(shell ls -al)
+
+ifeq ($(WHAT_TO_PRINT), "Lorem Ipsum")
+	PRINT_THIS = "LOREM IPSUM"
+else
+	PRINT_THIS = "HELLO WORLD"
+endif
+
+print-hello-world:
+	@echo "Hello World"
+
+print-hello-world-again: print-hello-world
+	@echo "Hello World Again!"
+
+print-macro:
+	@echo $(WHAT_TO_PRINT)
+
+print-ls-output:
+	@echo $(LS_OUTPUT)
+
+print-if-else:
+	@echo $(PRINT_THIS)
+
+
