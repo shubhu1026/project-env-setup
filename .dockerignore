@@ -1,0 +1,6 @@
+*
+
+!docker/
+!cyber-bullying-detection
+!pyproject.toml
+!poetry.lock
